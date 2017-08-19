@@ -20,8 +20,8 @@ h1,h2,h3 {
 header {
 	text-align: center;
 	text-transform: uppercase;
-	background-size: cover;
 	background: #c39ddb url(../images/header-bg.jpg)center;
+	background-size: cover;
 	color: white;
 	padding: 40px 0;
 	margin-bottom: 30px;
