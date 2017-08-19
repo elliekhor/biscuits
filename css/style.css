@@ -1,0 +1,110 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato',sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	margin: 0;
+}
+
+h1,h2,h3 {
+	font-family: 'Open Sans Condensed',sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+header {
+	text-align: center;
+	text-transform: uppercase;
+	background-size: cover;
+	background: #c39ddb url(../images/header-bg.jpg)center;
+	color: white;
+	padding: 40px 0;
+	margin-bottom: 30px;
+}
+
+a {
+	color: #e5dede;
+	text-decoration: none;
+	letter-spacing: 3px;
+	padding-bottom: 5px;
+}
+
+a:hover {
+	border-bottom: 1px solid white;
+}
+
+.container, .sidebar{
+	float:left;
+}
+
+.wrapper {
+	width: 1000px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.container {
+	width:66.66%;
+	/*float:left;*/
+}
+
+.sidebar{
+	width:33.33%;
+	/*float:right;*/
+	background: orange;
+	padding: 20px;
+}
+
+article {
+	float: left;
+	width:50%;
+}
+
+/*clear's float settings from footer*/
+footer {
+	clear:both;
+	background: grey;
+	color: white;
+	padding: 30px;
+	text-align: center;
+}
+
+
+/*targetting a specific element in a class*/
+.sidebar a {
+	color:black;
+}
+
+ul li {
+	display: inline;
+	margin: 10px;
+}
+
+ul {
+	padding:0;
+}
+
+/*what happens when screen width is less than 960*/
+@media (max-width: 960) {
+	.sidebar {
+		display: none;
+	}
+	
+	.container, .wrapper {
+		width: 100%;
+	}
+}
+
+@media (max-width: 660px) {
+	article {
+		width: 100%;
+	}
+	article img {
+		width: 100%;
+	}
+}
